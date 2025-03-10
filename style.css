@@ -1,0 +1,11 @@
+/*@ font-face - mělo by fungovat na připojení fontů
+{}*/
+body {
+    background-color:aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hlavicka {
+    background-image: url(library-7976837_1280.jpg);
+    color: white;
+}
