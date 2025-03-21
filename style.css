@@ -1,11 +1,86 @@
 /*@ font-face - mělo by fungovat na připojení fontů
 {}*/
 body {
-    background-color:aliceblue;
+    background-color:rgb(221, 217, 208);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .hlavicka {
     background-image: url(library-7976837_1280.jpg);
+    background-size: cover;
+    padding: 10vh;
+    max-height: 5vh;
     color: white;
+    text-align: center;
+    overflow: auto;
+}
+
+.hlavicka h1,
+.hlavicka h2 {
+    margin: 0%;
+    padding: 10%;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(168, 165, 158);
+}
+
+li a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+    
+}
+
+.menu a {
+    display: block;
+}
+
+.menu li :link {
+    color: rgb(255, 255, 255);
+}
+
+.menu li :visited {
+    color: rgb(140, 137, 131);
+}
+
+.knihovna {
+    display: flex;
+    flex-direction: column;
+    border: solid red;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.pismeno {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100%/4);
+    margin: 0;
+    padding: 0;
+}
+
+.pismeno h3 {
+    text-align: center;
+}
+
+.pismeno ul li {
+    list-style: none;
+}
+
+.pismeno li a:link {
+    color:white
+}
+
+@media (min-width: 400px) {
+    .knihovna {
+        flex-direction: row;
+    }
 }
